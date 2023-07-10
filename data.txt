@@ -1,0 +1,3 @@
+admin:
+email: jordillps@gmail.com
+password: password

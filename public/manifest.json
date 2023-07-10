@@ -1,0 +1,17 @@
+{
+    "name": "Formal web",
+    "short_name": "Formal web",
+    "start_url": "/index.php",
+    "background_color": "#226600",
+    "description": "Web developer Freelance",
+    "display": "fullscreen",
+    "theme_color": "#226600",
+    "icons": [
+        {
+            "src": "img/web/apple-touch-icon.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}
