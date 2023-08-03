@@ -56,6 +56,7 @@ return [
     'next-post' => 'Publicació següent',
     'previous-post' => 'Publicació anterior',
     'related-posts' => 'Publicacions relacionades',
+    'blog-details' => "Detalls de la publicació",
 
 
     //Contact

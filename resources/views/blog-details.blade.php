@@ -25,7 +25,7 @@
                <div class="row">
                    <div class="col-12 d-flex justify-content-sm-end justify-content-center">
                         <div class="inner-breadcrumb" role="contentinfo">
-                            <h1>Blog Details</h1>
+                            <h1>{{ __('web.blog-details') }}</h1>
                             <nav>
                                 <ol class="breadcrumb" role="navigation" aria-label="{{ $post->{'title:'. app()->getLocale()} }}">
                                   <li class="breadcrumb-item"><a href="{{ route('home') }}">{{ __('web.home') }}</a></li>
@@ -75,7 +75,7 @@
                             <p>{{ $post->{'iframe:'. app()->getLocale()} }}</p>
                         </blockquote>
                         
-                        <div class="blog-tag">
+                        {{-- <div class="blog-tag">
                             <div class="row g-3">
                                 <div class="col-md-6 d-flex justify-content-md-start justify-content-center align-items-center">
                                     <p class="h4">{{ __('web.share-on') }}</p>
@@ -85,7 +85,7 @@
                                     </ul>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                         <div class="page-navigation-area">
                             <div class="row g-4">
                                 <div class="col-lg-3 d-flex ptt-20 align-items-center justify-content-center justify-content-lg-start">

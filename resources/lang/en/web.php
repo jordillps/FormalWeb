@@ -61,6 +61,7 @@ return [
     'next-post' => 'Next Post',
     'previous-post' => 'Previous Post',
     'related-posts' => 'Related posts',
+    'blog-details' => "Blog details",
 
 
     //Contact

@@ -43,6 +43,10 @@ class HomeWebController extends Controller
 
         SEOMeta::setDescription(trans('seo.home-description'));
 
+        //Server
+        SEOMeta::setCanonical('https://formalweb.cat');
+        //SEOMeta::setCanonical('https://formalweb.dev');
+
         return view('home', compact('header','services', 'projects', 'setting'));
     }
 

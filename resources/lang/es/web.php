@@ -59,6 +59,7 @@ return [
     'next-post' => 'Publicación siguiente',
     'previous-post' => 'Publicación anterior',
     'related-posts' => 'Publicaciones relacionadas',
+    'blog-details' => "Detalles de la publicación",
 
 
     //Contact
