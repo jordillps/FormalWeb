@@ -2,13 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://formalweb.cat/</loc>
-    <lastmod>2023-07-21</lastmod>
+    <lastmod>2023-08-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-      <image:image>
-        <image:loc>https://formalweb.cat/img/logoFormalWebMobile.png</image:loc>
-        <image:title>Página inicio Formal Web para móvil</image:title>
-      </image:image>
       <image:image>
         <image:loc>https://formalweb.cat/img/web/home/check-white.png</image:loc>
         <image:title>Pàgines web administrables</image:title>
@@ -120,13 +116,9 @@
   </url>
   <url>
     <loc>https://formalweb.cat/servicios-desarrollo-web-seo</loc>
-    <lastmod>2023-07-21</lastmod>
+    <lastmod>2023-08-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
-      <image:image>
-        <image:loc>https://formalweb.cat/img/logoFormalWebMobile.png</image:loc>
-        <image:title>Página inicio Formal Web para móvil</image:title>
-      </image:image>
       <image:image>
         <image:loc>https://formalweb.cat/media/services/1/643ff8a3a1613_disseny-web.png</image:loc>
         <image:title>Disseny web</image:title>
@@ -234,51 +226,19 @@
   </url>
   <url>
     <loc>https://formalweb.cat/sobre-mi-desarollador-web</loc>
-    <lastmod>2023-07-21</lastmod>
+    <lastmod>2023-08-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
-      <image:image>
-        <image:loc>https://formalweb.cat/img/logoFormalWebMobile.png</image:loc>
-        <image:title>Página inicio Formal Web para móvil</image:title>
-      </image:image>
       <image:image>
         <image:loc>https://formalweb.cat/media/abouts/1/6447f336309a6_jordi.webp</image:loc>
         <image:title>desarrollador web freelance</image:title>
       </image:image>
   </url>
   <url>
-    <loc>https://formalweb.cat/contacto-formal-web-lleida</loc>
-    <lastmod>2023-07-21</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-      <image:image>
-        <image:loc>https://formalweb.cat/img/logoFormalWebMobile.png</image:loc>
-        <image:title>Página inicio Formal Web para móvil</image:title>
-      </image:image>
-  </url>
-  <url>
-    <loc>https://formalweb.cat/blog-desarrollo-web</loc>
-    <lastmod>2023-07-21</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-      <image:image>
-        <image:loc>https://formalweb.cat/img/logoFormalWebMobile.png</image:loc>
-        <image:title>Página inicio Formal Web para móvil</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://formalweb.cat/media/posts/1/6442a7e389428_blog-1.png</image:loc>
-        <image:title>Laravel executar "php artisan optimize" al servidor</image:title>
-      </image:image>
-  </url>
-  <url>
     <loc>https://formalweb.cat/proyectos-desarrollo-web-seo</loc>
-    <lastmod>2023-07-21</lastmod>
+    <lastmod>2023-08-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
-      <image:image>
-        <image:loc>https://formalweb.cat/img/logoFormalWebMobile.png</image:loc>
-        <image:title>Página inicio Formal Web para móvil</image:title>
-      </image:image>
       <image:image>
         <image:loc>https://formalweb.cat/media/projects/1/64525dcf28e5e_pantalles-sentits.webp</image:loc>
         <image:title>Projecte web</image:title>
@@ -313,17 +273,41 @@
       </image:image>
   </url>
   <url>
+    <loc>https://formalweb.cat/blog-desarrollo-web</loc>
+    <lastmod>2023-08-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+      <image:image>
+        <image:loc>https://formalweb.cat/media/posts/3/64c91ceef3e51_tables_css370x270.png</image:loc>
+        <image:title>Taules responsive amb CSS</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://formalweb.cat/media/posts/1/6442a7e389428_blog-1.png</image:loc>
+        <image:title>Laravel executar "php artisan optimize" al servidor</image:title>
+      </image:image>
+  </url>
+  <url>
     <loc>https://formalweb.cat/blog-desarrollo-web/laravel-ejecutar-php-artisan-optimize-en-el-servidor</loc>
-    <lastmod>2023-07-21</lastmod>
+    <lastmod>2023-08-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
       <image:image>
-        <image:loc>https://formalweb.cat/img/logoFormalWebMobile.png</image:loc>
-        <image:title>Página inicio Formal Web para móvil</image:title>
-      </image:image>
-      <image:image>
         <image:loc>https://formalweb.cat/media/posts/1/6442a7e972c1c_blog-1-details.png</image:loc>
         <image:title>Laravel executar "php artisan optimize" al servidor</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://formalweb.cat/img/web/icons/blockquote-icon.svg</image:loc>
+        <image:title>comillas</image:title>
+      </image:image>
+  </url>
+  <url>
+    <loc>https://formalweb.cat/blog-desarrollo-web/tablas-responsive-con-css</loc>
+    <lastmod>2023-08-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+      <image:image>
+        <image:loc>https://formalweb.cat/media/posts/3/64c91cf992823_taules_css770x450.png</image:loc>
+        <image:title>Taules responsive amb CSS</image:title>
       </image:image>
       <image:image>
         <image:loc>https://formalweb.cat/img/web/icons/blockquote-icon.svg</image:loc>

@@ -69,7 +69,7 @@ class BlogWebController extends Controller
     public function show(Post $post)
     {
         //
-        SEOTools::setTitle($post->{'title:'. app()->getLocale()});
+        SEOTools::setTitle($post->{'title:'. app()->getLocale()} . ' | Blog');
         SEOTools::setDescription($post->{'excerpt:'. app()->getLocale()});
 
         $setting = Setting::first();

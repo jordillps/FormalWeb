@@ -25,7 +25,7 @@
                <div class="row">
                    <div class="col-12 d-flex justify-content-sm-end justify-content-center">
                         <div class="inner-breadcrumb" role="contentinfo">
-                            <h1>{{ __('web.blog-details') }}</h1>
+                            <h1 style="color:black;">{{ $post->{'title:'. app()->getLocale()} }}</h1>
                             <nav>
                                 <ol class="breadcrumb" role="navigation" aria-label="{{ $post->{'title:'. app()->getLocale()} }}">
                                   <li class="breadcrumb-item"><a href="{{ route('home') }}">{{ __('web.home') }}</a></li>
