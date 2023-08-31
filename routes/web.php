@@ -130,15 +130,15 @@ Route::group(['middleware' => ['auth']], function () {
 });
 
 //Redirects
-Route::redirect('/sobremi-diseño-web.html', '/sobre-mi-desarollador-web', 301);
-Route::redirect('/sobremi-diseño-web.es.html', '/sobre-mi-desarollador-web', 301);
-Route::redirect('/index.es.html', '/', 301);
-Route::redirect('/index.html', '/', 301);
-Route::redirect('/policy.html', '/', 301);
-Route::redirect('/proyectos-web-responsive-lleida.html', '/proyectos-desarrollo-web-seo', 301);
-Route::redirect('/servicios-diseño-web-posicionamiento-seo-lleida.html', '/servicios-desarrollo-web-seo', 301);
-Route::redirect('/contacto-formal-web-lleida.php', '/contacto-formal-web-lleida', 301);
-Route::redirect('/contacto-formal-web-lleida.es.php', '/contacto-formal-web-lleida', 301);
+// Route::redirect('/sobremi-diseño-web.html', '/sobre-mi-desarollador-web', 301);
+// Route::redirect('/sobremi-diseño-web.es.html', '/sobre-mi-desarollador-web', 301);
+// Route::redirect('/index.es.html', '/', 301);
+// Route::redirect('/index.html', '/', 301);
+// Route::redirect('/policy.html', '/', 301);
+// Route::redirect('/proyectos-web-responsive-lleida.html', '/proyectos-desarrollo-web-seo', 301);
+// Route::redirect('/servicios-diseño-web-posicionamiento-seo-lleida.html', '/servicios-desarrollo-web-seo', 301);
+// Route::redirect('/contacto-formal-web-lleida.php', '/contacto-formal-web-lleida', 301);
+// Route::redirect('/contacto-formal-web-lleida.es.php', '/contacto-formal-web-lleida', 301);
 Route::redirect('/contacto', '/contacto-formal-web-lleida', 301);
 
 

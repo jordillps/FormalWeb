@@ -22,7 +22,7 @@
     <!-- box-icon -->
     <link rel="stylesheet" href="{{ asset('css/web/boxicons.min.css') }}">
     <!-- bootstrap icon -->
-    <link rel="stylesheet" href="{{ asset('css/web/bootstrap-icons.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/web/bootstrap-icons.min.css') }}">
     <!-- jquery ui -->
     {{-- <link rel="stylesheet" href="{{ asset('css/web/jquery-ui.css') }}"> --}}
     <!-- swiper-slide -->
@@ -37,7 +37,7 @@
     <!-- odometer css -->
     <link rel="stylesheet" href="{{ asset('css/web/odometer.css') }}">
     <!-- style css -->
-    <link rel="stylesheet" href="{{ asset('css/web/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/web/style.min.css') }}">
 
     <!-- Cookies -->
     <!-- Load plugin css -->
@@ -106,13 +106,13 @@
 
     @if(app()->getLocale() == 'ca')
         <!-- CAT -->
-        <script defer src="{{ asset('cookies/cookieconsent-init-ca.js') }}"></script>
+        <script defer src="{{ asset('cookies/cookieconsent-init-ca.min.js') }}"></script>
     @elseif(app()->getLocale() == 'es')
         <!-- ES -->
-        <script defer src="{{ asset('cookies/cookieconsent-init-es.js') }}"></script>
+        <script defer src="{{ asset('cookies/cookieconsent-init-es.min.js') }}"></script>
     @else
         <!-- EN -->
-        <script defer src="{{ asset('cookies/cookieconsent-init-en.js') }}"></script>
+        <script defer src="{{ asset('cookies/cookieconsent-init-en.min.js') }}"></script>
     @endif
     
     <!-- js file link -->
@@ -122,19 +122,19 @@
     <script src="{{ asset('js/web/wow.min.js') }}"></script>
     <script src="{{ asset('js/web/swiper-bundle.min.js') }}"></script>
     {{-- <script src="{{ asset('js/web/slick.js') }}"></script> --}}
-    <script src="{{ asset('js/web/jquery.nice-select.js') }}"></script>
+    <script src="{{ asset('js/web/jquery.nice-select.min.js') }}"></script>
     <script src="{{ asset('js/web/odometer.min.js') }}"></script>
     <script src="{{ asset('js/web/isotope.pkgd.min.js') }}"></script>
-    <script src="{{ asset('js/web/viewport.jquery.js') }}"></script>
+    <script src="{{ asset('js/web/viewport.jquery.min.js') }}"></script>
     <script src="{{ asset('js/web/jquery.magnific-popup.min.js') }}"></script>
-    <script src="{{ asset('js/web/main.js') }}"></script>
+    <script src="{{ asset('js/web/main.min.js') }}"></script>
 
     <script src="{{ asset('js/web/lazysizes.min.js') }}" async></script>
    
 
     @stack('scripts')
 
-    <script src="{{ asset('sw.js') }}"></script>
+    <script src="{{ asset('sw.min.js') }}"></script>
     <script>
         if (!navigator.serviceWorker.controller) {
             navigator.serviceWorker.register("/sw.js").then(function (reg) {
