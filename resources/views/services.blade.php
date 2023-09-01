@@ -103,9 +103,15 @@
                             </div>
                             <div class="blog-widget-body">
                                 <ul class="sidebar-social-list gap-4">
-                                    <li><a href="{{ $setting->linkedin_url }}" target="blank" aria-label="linkedin"><i class="bx bxl-facebook"></i></a></li>
-                                    <li><a href="{{ $setting->twitter_url }}" target="blank" aria-label="twitter"><i class="bx bxl-twitter"></i></a></li>
-                                    <li><a href="{{ $setting->linkedin_url }}" target="blank" aria-label="linkedin"><i class="bx bxl-linkedin"></i></a></li>
+                                    <li><a href="{{ $setting->linkedin_url }}" target="blank" aria-label="linkedin">
+                                        <span class="visually-hidden">Linkedin</span>
+                                        <i alt="logo linkedin" class="bx bxl-linkedin"></i></a></li>
+                                    <li><a href="{{ $setting->twitter_url }}" target="blank" aria-label="twitter">
+                                        <span class="visually-hidden">Twitter</span>
+                                        <i alt="logo twitter" class="bx bxl-twitter"></i></a></li>
+                                    <li><a href="{{ $setting->facebook_url }}" target="blank" aria-label="facebook">
+                                        <span class="visually-hidden">Facebook</span>
+                                        <i alt="logo facebook" class="bx bxl-facebook"></i></a></li>
                                 </ul>
                             </div>
                         </div>
