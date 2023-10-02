@@ -1,3 +1,11 @@
+LOCALE
 admin:
 email: jordillps@gmail.com
 password: password
+
+SERVER
+admin:
+email: jordillps@gmail.com
+password: Joibla068!
+
+use \Mcamara\LaravelLocalization\Facades\LaravelLocalization;
