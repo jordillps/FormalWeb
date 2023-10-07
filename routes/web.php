@@ -40,24 +40,26 @@ use App\Http\Controllers\PrivacyPolicyController;
 |
 */
 
-//Web
-Route::get('/', [HomeWebController::class,'index'])->name('home');
-Route::get('/sobre-mi-desarollador-web', [AboutWebController::class,'index'])->name('about-me');
-Route::get('/servicios-desarrollo-web-seo', [ServicesWebController::class,'index'])->name('services');
-Route::get('/proyectos-desarrollo-web-seo', [ProjectsWebController::class,'index'])->name('projects');
-Route::get('/blog-desarrollo-web', [BlogWebController::class,'index'])->name('blog');
-Route::get('/blog-desarrollo-web/{post}', [BlogWebController::class,'show'])->name('blog.show');
-Route::get('/contacto-formal-web-lleida', [ContactWebController::class,'index'])->name('contact');
+Route::group(['prefix' => LaravelLocalization::setLocale()], function()
+{
+    //Web
+    Route::get('/', [HomeWebController::class,'index'])->name('home');
+    Route::get('/sobre-mi-desarollador-web', [AboutWebController::class,'index'])->name('about-me');
+    Route::get('/servicios-desarrollo-web-seo', [ServicesWebController::class,'index'])->name('services');
+    Route::get('/proyectos-desarrollo-web-seo', [ProjectsWebController::class,'index'])->name('projects');
+    Route::get('/blog-desarrollo-web', [BlogWebController::class,'index'])->name('blog');
+    Route::get('/blog-desarrollo-web/{post}', [BlogWebController::class,'show'])->name('blog.show');
+    Route::get('/contacto-formal-web-lleida', [ContactWebController::class,'index'])->name('contact');
 
-//Legal Pages
-Route::get('/aviso-legal', [LegalNoticeController::class,'index'])->name('legal-notice');
-Route::get('/politica-cookies', [CookiesPolicyController::class,'index'])->name('cookies-policy');
-Route::get('/politica-privacidad', [PrivacyPolicyController::class,'index'])->name('privacy-policy');
+    //Legal Pages
+    Route::get('/aviso-legal', [LegalNoticeController::class,'index'])->name('legal-notice');
+    Route::get('/politica-cookies', [CookiesPolicyController::class,'index'])->name('cookies-policy');
+    Route::get('/politica-privacidad', [PrivacyPolicyController::class,'index'])->name('privacy-policy');
 
-Route::get('locale/{locale}', [LocalizationController::class,'setLocale'])->name('setLocale');
 
-//Web Contacts
-Route::resource('/contacts', ContactFormController::class);
+    //Web Contacts
+    Route::resource('/contacts', ContactFormController::class);
+});
 
 
 //Auth
@@ -68,6 +70,7 @@ Auth::routes(['register' => false]);
 Route::group(['middleware' => ['auth']], function () {
 
     // Route::get('/emailverification', 'HomeController@emailverification')->name('emailverification');
+    Route::get('locale/{locale}', [LocalizationController::class,'setLocale'])->name('setLocale');
 
 	Route::group(["prefix" => "admin"], function() {
         Route::get('/', [HomeController::class, 'index'])->name('admin');
