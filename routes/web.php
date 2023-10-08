@@ -40,21 +40,22 @@ use App\Http\Controllers\PrivacyPolicyController;
 |
 */
 
-Route::group(['prefix' => LaravelLocalization::setLocale()], function()
-{
+Route::group(['prefix' => LaravelLocalization::setLocale(),
+'middleware' => ['localizationRedirect']
+], function(){
     //Web
     Route::get('/', [HomeWebController::class,'index'])->name('home');
-    Route::get('/sobre-mi-desarollador-web', [AboutWebController::class,'index'])->name('about-me');
-    Route::get('/servicios-desarrollo-web-seo', [ServicesWebController::class,'index'])->name('services');
-    Route::get('/proyectos-desarrollo-web-seo', [ProjectsWebController::class,'index'])->name('projects');
-    Route::get('/blog-desarrollo-web', [BlogWebController::class,'index'])->name('blog');
-    Route::get('/blog-desarrollo-web/{post}', [BlogWebController::class,'show'])->name('blog.show');
-    Route::get('/contacto-formal-web-lleida', [ContactWebController::class,'index'])->name('contact');
+    Route::get(LaravelLocalization::transRoute('routes.about'), [AboutWebController::class,'index'])->name('about-me');
+    Route::get(LaravelLocalization::transRoute('routes.services'), [ServicesWebController::class,'index'])->name('services');
+    Route::get(LaravelLocalization::transRoute('routes.projects'), [ProjectsWebController::class,'index'])->name('projects');
+    Route::get(LaravelLocalization::transRoute('routes.blog'), [BlogWebController::class,'index'])->name('blog');
+    Route::get(LaravelLocalization::transRoute('routes.blog-show'), [BlogWebController::class,'show'])->name('blog.show');
+    Route::get(LaravelLocalization::transRoute('routes.contact'), [ContactWebController::class,'index'])->name('contact');
 
     //Legal Pages
-    Route::get('/aviso-legal', [LegalNoticeController::class,'index'])->name('legal-notice');
-    Route::get('/politica-cookies', [CookiesPolicyController::class,'index'])->name('cookies-policy');
-    Route::get('/politica-privacidad', [PrivacyPolicyController::class,'index'])->name('privacy-policy');
+    Route::get(LaravelLocalization::transRoute('routes.legal-notice'), [LegalNoticeController::class,'index'])->name('legal-notice');
+    Route::get(LaravelLocalization::transRoute('routes.cookies-policy'), [CookiesPolicyController::class,'index'])->name('cookies-policy');
+    Route::get(LaravelLocalization::transRoute('routes.privacy-policy'), [PrivacyPolicyController::class,'index'])->name('privacy-policy');
 
 
     //Web Contacts
