@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\About;
 use Artesaos\SEOTools\Facades\SEOTools;
-use Artesaos\SEOTools\Facades\SEOMeta;
+use Artesaos\SEOTools\Facades\JsonLd;
 
 
 class AboutWebController extends Controller
@@ -20,8 +20,11 @@ class AboutWebController extends Controller
         $about = About::first();
 
         SEOTools::setTitle(trans('seo.about-me-title'));
-
         SEOTools::setDescription(trans('seo.about-me-description'));
+
+        JsonLd::setTitle(trans('seo.about-me-title'));
+        JsonLd::setDescription(trans('seo.about-me-description'));
+        JsonLd::addImage($about->getMedia('images')[0]->getUrl());
 
         return view('about-me', compact('about'));
     }

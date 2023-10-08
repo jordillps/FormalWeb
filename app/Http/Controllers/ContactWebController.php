@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Artesaos\SEOTools\Facades\SEOTools;
-use Artesaos\SEOTools\SEOMeta;
+use Artesaos\SEOTools\Facades\JsonLd;
 
 
 class ContactWebController extends Controller
@@ -17,8 +17,10 @@ class ContactWebController extends Controller
     public function index()
     {
         SEOTools::setTitle(trans('seo.contact-title'));
-
         SEOTools::setDescription(trans('seo.contact-description'));
+
+        JsonLd::setTitle(trans('seo.contact-title'));
+        JsonLd::setDescription(trans('seo.contact-description'));
 
         return view('contact');
     }

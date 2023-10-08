@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Models\LegalPage;
 use Artesaos\SEOTools\Facades\SEOTools;
 use Artesaos\SEOTools\Facades\SEOMeta;
+use Artesaos\SEOTools\Facades\JsonLd;
+
 
 
 class PrivacyPolicyController extends Controller
@@ -17,10 +19,11 @@ class PrivacyPolicyController extends Controller
      */
     public function index()
     {
-        SEOTools::setTitle('Política privacidad');
+        SEOTools::setTitle(trans('seo.privacy-policy-title'));
+        SEOTools::setDescription(trans('seo.privacy-policy-description'));
 
-        SEOTools::setDescription('Desarrollador web Freelance.Diseño web responsive. Lenguajes HTML,CSS,PHP,Javascript, Laravel, MySql. Política de privacidad');
-
+        JsonLd::setTitle(trans('seo.privacy-policy-title'));
+        JsonLd::setDescription(trans('seo.privacy-policy-description'));
         SEOMeta::setRobots('noindex,follow');
 
         $privacyPolicy =  LegalPage::where('url','politica-privacidad')->first();

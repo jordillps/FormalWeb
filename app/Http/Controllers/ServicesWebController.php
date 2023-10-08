@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Service;
 use App\Models\Setting;
 use Artesaos\SEOTools\Facades\SEOTools;
-use Artesaos\SEOTools\SEOMeta;
+use Artesaos\SEOTools\Facades\JsonLd;
 
 class ServicesWebController extends Controller
 {
@@ -22,8 +22,10 @@ class ServicesWebController extends Controller
         $setting = Setting::first();
 
         SEOTools::setTitle(trans('seo.services-title'));
-
         SEOTools::setDescription(trans('seo.services-description'));
+
+        JsonLd::setTitle(trans('seo.about-me-title'));
+        JsonLd::setDescription(trans('seo.about-me-description'));
 
         return view('services', compact('services', 'setting'));
     }

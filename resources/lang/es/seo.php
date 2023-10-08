@@ -13,6 +13,12 @@ return [
     'contact-title' => 'Diseño profesional de páginas  web en Lleida',
     'contact-description' => 'Diseño profesional de páginas web en Lleida, serà un placer ayudareles en su proyecto web',
     'blog-title' => 'Blog desarrollo web',
-    'blog-description' => 'Desarrollador web Freelance.Diseño web responsive. Publicaciones sobre lenguajes de programación'
+    'blog-description' => 'Desarrollador web Freelance.Diseño web responsive. Publicaciones sobre lenguajes de programación',
+    'cookies-policy-title' => 'Nuestra política de cookies - Formal Web',
+    'cookies-policy-description' => 'Desarrollador web Freelance. Diseño web responsive. Optimización SEO - Política de cookies',
+    'privacy-policy-title' => 'Política de privacidad - Formal Web',
+    'privacy-policy-description' => 'Desarrollador web Freelance. Diseño web responsive. Optimización SEO - Política de privacidad',
+    'legal-notice-title' => 'Aviso legal - Formal Web',
+    'legal-notice-description' => 'Desarrollador web Freelance. Lenguajes HTML,CSS,PHP,Javascript, Laravel, MySql - Aviso Legal',
     
 ];

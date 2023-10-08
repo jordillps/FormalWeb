@@ -5,7 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Project;
 use Artesaos\SEOTools\Facades\SEOTools;
-use Artesaos\SEOTools\SEOMeta;
+use Artesaos\SEOTools\Facades\JsonLd;
+
 
 class ProjectsWebController extends Controller
 {
@@ -17,8 +18,10 @@ class ProjectsWebController extends Controller
     public function index()
     {
         SEOTools::setTitle(trans('seo.projects-title'));
-
         SEOTools::setDescription(trans('seo.projects-description'));
+
+        JsonLd::setTitle(trans('seo.projects-title'));
+        JsonLd::setDescription(trans('seo.projects-description'));
 
         $projects = Project::where('isPublished', true)->get();
         

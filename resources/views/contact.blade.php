@@ -13,6 +13,12 @@
     {!! Twitter::generate() !!}
     <!-- SEO Json-Ld -->
     {!! JsonLd::generate() !!}
+
+    @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+        <link rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+    @endforeach
+    <link rel="alternate" hreflang="x-default" href="{{ LaravelLocalization::getLocalizedURL('ca') }}">
+    <link rel="canonical" href="{{ LaravelLocalization::getLocalizedURL()}}">
 @endsection
 
 @section('content')

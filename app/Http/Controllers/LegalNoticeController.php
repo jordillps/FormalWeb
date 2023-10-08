@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\LegalPage;
 use Artesaos\SEOTools\Facades\SEOTools;
 use Artesaos\SEOTools\Facades\SEOMeta;
-
+use Artesaos\SEOTools\Facades\JsonLd;
 
 
 class LegalNoticeController extends Controller
@@ -18,9 +18,11 @@ class LegalNoticeController extends Controller
      */
     public function index()
     {
-        SEOTools::setTitle('Aviso Legal');
+        SEOTools::setTitle(trans('seo.legal-notice-title'));
+        SEOTools::setDescription(trans('seo.legal-notice-description'));
 
-        SEOTools::setDescription('Desarrollador web Freelance.Diseño web responsive. Optimización SEO. Lenguajes HTML,CSS,PHP,Javascript, Laravel, MySql. Aviso Legal');
+        JsonLd::setTitle(trans('seo.legal-notice-title'));
+        JsonLd::setDescription(trans('seo.legal-notice-description'));
 
         SEOMeta::setRobots('noindex,follow');
 

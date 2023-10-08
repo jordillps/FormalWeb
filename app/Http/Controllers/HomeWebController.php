@@ -40,12 +40,11 @@ class HomeWebController extends Controller
         $setting = Setting::first();
 
         SEOMeta::setTitle(trans('seo.home-title'));
-
         SEOMeta::setDescription(trans('seo.home-description'));
 
-        //Server
-        SEOMeta::setCanonical('https://formalweb.cat');
-        //SEOMeta::setCanonical('https://formalweb.dev');
+        JsonLd::setTitle(trans('seo.home-title'));
+        JsonLd::setDescription(trans('seo.home-description'));
+
 
         return view('home', compact('header','services', 'projects', 'setting'));
     }

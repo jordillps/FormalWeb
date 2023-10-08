@@ -2,16 +2,23 @@
 
 return [
 
-    'home-title' => 'Diseño web profesional, posicionamento de la web, SEO',
-    'home-description' => 'Diseño de páginas web profesional, SEO para su posicionamiento orgánico, desarrollo aplicaciones web',
-    'about-me-title' => 'Diseñador web freelance en Lleida, posicionamiento SEO',
-    'about-me-description' => 'Diseño de páginas web en Lledia, estudio de SEO para el posicionamiento web, desarrollo de aplicaciones web',
-    'services-title' => 'Servicios de diseño web responsive, análisis SEO onpage',
-    'services-description' => 'Servicios de diseño web responsive y administrable, anàlitica SEO on page para conseguir posicionamiento',
-    'projects-title' => 'Desarrollo Proyectos web totalmente personalizados',
-    'projects-description' => 'Diseño y desarrollo de proyectos web para su empresa. Diseño personalizado a medida de los clientes',
-    'contact-title' => 'Diseño profesional de páginas  web en Lleida',
-    'contact-description' => 'Diseño profesional de páginas web en Lleida, serà un placer ayudareles en su proyecto web',
-    'blog-title' => 'Blog desarrollo web',
-    'blog-description' => 'Desarrollador web Freelance.Diseño web responsive. Publicaciones sobre lenguajes de programación'
+    'home-title' => 'Professional web design, web positioning, SEO',
+    'home-description' => 'Professional web page design, SEO for organic positioning, web application development',
+    'about-me-title' => 'Freelance web designer in Lleida, SEO positioning',
+    'about-me-description' => 'Web page design in Lledia, SEO study for web positioning, web application development',
+    'services-title' => 'Responsive web design services, on-page SEO analysis',
+    'services-description' => 'Responsive and manageable web design services, on-page SEO analytics to achieve positioning',
+    'projects-title' => 'Development of fully customized web projects',
+    'projects-description' => 'Design and development of web projects for your company. Customized design tailored to clients',
+    'contact-title' => 'Professional web page design in Lleida',
+    'contact-description' => 'Professional web page design in Lleida, it will be a pleasure to help you in your web project',
+    'blog-title' => 'Web development blog',
+    'blog-description' => 'Freelance web developer. Responsive web design. Publications on programming languages',
+    'cookies-policy-title' => 'Cookies policy - Formal Web',
+    'cookies-policy-description' => 'Freelance web developer. Responsive web design. SEO optimization - Cookies policy',
+    'privacy-policy-title' => 'Privacy policy - Formal Web',
+    'privacy-policy-description' => 'Freelance web developer. Responsive web design. SEO optimization - Privacy policy',
+    'legal-notice-title' => 'Legal Notice - Formal Web',
+    'legal-notice-description' => 'Freelance web developer. Languages HTML, CSS, PHP, Javascript, Laravel, MySql - Legal notice',
+
 ];

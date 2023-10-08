@@ -8,6 +8,8 @@ use Carbon\Carbon;
 use Astrotomic\Translatable\Translatable;
 use App\Models\Setting;
 use Artesaos\SEOTools\Facades\SEOTools;
+use Artesaos\SEOTools\Facades\JsonLd;
+
 
 
 
@@ -23,6 +25,9 @@ class BlogWebController extends Controller
     {
         SEOTools::setTitle(trans('seo.blog-title'));
         SEOTools::setDescription(trans('seo.blog-description'));
+
+        JsonLd::setTitle(trans('seo.blog-title'));
+        JsonLd::setDescription(trans('seo.blog-description'));
         
         $posts = Post::where('isPublished', true)
         // ->leftJoin('post_translations', 'post_translations.post_id', 'posts.id')
@@ -72,6 +77,12 @@ class BlogWebController extends Controller
         SEOTools::setTitle($post->{'title:'. app()->getLocale()} . ' | Blog');
         SEOTools::setDescription($post->{'excerpt:'. app()->getLocale()});
 
+        JsonLd::setTitle($post->{'title:'. app()->getLocale()} . ' | Blog');
+        JsonLd::setDescription($post->{'excerpt:'. app()->getLocale()});
+        if(count($post->getMedia('images'))>1){
+            JsonLd::addImage($post->getMedia('images')[1]->getUrl());
+        }
+            
         $setting = Setting::first();
 
         $tags = $post->tags;

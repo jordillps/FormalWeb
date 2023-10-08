@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\LegalPage;
 use Artesaos\SEOTools\Facades\SEOTools;
 use Artesaos\SEOTools\Facades\SEOMeta;
+use Artesaos\SEOTools\Facades\JsonLd;
 
 
 class CookiesPolicyController extends Controller
@@ -17,9 +18,11 @@ class CookiesPolicyController extends Controller
      */
     public function index()
     {
-        SEOTools::setTitle('Política cookies');
+        SEOTools::setTitle(trans('seo.cookies-policy-title'));
+        SEOTools::setDescription(trans('seo.cookies-policy-description'));
 
-        SEOTools::setDescription('Desarrollador web Freelance.Diseño web responsive. Lenguajes HTML,CSS,PHP,Javascript, Laravel, MySql. Política de cookies');
+        JsonLd::setTitle(trans('seo.cookies-policy-title'));
+        JsonLd::setDescription(trans('seo.cookies-policy-description'));
 
         SEOMeta::setRobots('noindex,follow');
 

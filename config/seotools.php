@@ -49,9 +49,9 @@ return [
          * The default values to be used by the twitter cards generator.
          */
         'defaults' => [
-            'card'        => 'Diseño web responsive, adaptado a todos los dispositivos. Diseño personalizado. Optimitzación SEO. Anàlitica SEO. Diseño de aplicaciones web',
+            'card'        => 'summary',
             'site'        => '@formalweb',
-            'description' => 'summary'
+            'description' => ''
         ],
     ],
     'json-ld' => [
@@ -59,8 +59,8 @@ return [
          * The default configurations to be used by the json-ld generator.
          */
         'defaults' => [
-            'title'       => 'Diseño web Lleida - Diseño de paginas web, posicionamento SEO', // set false to total remove
-            'description' => 'Diseño web responsive, adaptado a todos los dispositivos. Diseño personalizado. Optimitzación SEO. Anàlitica SEO. Diseño de aplicaciones web', // set false to total remove
+            'title'       => false, // set false to total remove
+            'description' => false, // set false to total remove
             'url'         => 'current', // Set to null or 'full' to use Url::full(), set to 'current' to use Url::current(), set false to total remove
             'type'        => 'WebPage',
             'images'      => [],
