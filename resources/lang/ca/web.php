@@ -80,7 +80,7 @@ return [
     'about-me' => 'Sobre mi',
     'services' => 'Serveis',
     'projects' => 'Projectes',
-    'blog' => 'Blog',
+    'blog' => 'Publicacions',
     'contact' => 'Contacte',
     'all-rights-reserved' => 'Tots els drets reservats',
     'legal-notice' => 'Avís Legal',

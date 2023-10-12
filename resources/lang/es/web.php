@@ -52,7 +52,7 @@ return [
 
 
     //Blog
-    'blog' => 'Blog',
+    'blog' => 'Publicaciones',
     'by-author' => 'Jordi Llobet',
     'post-tag' => 'Etiquetas',
     'share-on' => 'Compartir',
@@ -80,10 +80,10 @@ return [
     'lets-chat' => 'Contacto',
     'follow-me' => 'Sígueme',
     'home' => 'Inicio',
-    'about-me' => 'Sobre mi',
+    'about-me' => 'Sobre Formal Web',
     'services' => 'Servicios',
     'projects' => 'Proyectos',
-    'blog' => 'Blog',
+    'blog' => 'Publicaciones',
     'contact' => 'Contacto',
     'all-rights-reserved' => 'Todos los derechos reservados',
     'legal-notice' => 'Aviso Legal',

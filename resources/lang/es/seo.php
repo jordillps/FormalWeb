@@ -12,7 +12,7 @@ return [
     'projects-description' => 'Diseño y desarrollo de proyectos web para su empresa. Diseño personalizado a medida de los clientes',
     'contact-title' => 'Diseño profesional de páginas  web en Lleida',
     'contact-description' => 'Diseño profesional de páginas web en Lleida, serà un placer ayudareles en su proyecto web',
-    'blog-title' => 'Blog desarrollo web',
+    'blog-title' => 'Blog desarrollo web y posicionamiento SEO',
     'blog-description' => 'Desarrollador web Freelance.Diseño web responsive. Publicaciones sobre lenguajes de programación',
     'cookies-policy-title' => 'Nuestra política de cookies - Formal Web',
     'cookies-policy-description' => 'Desarrollador web Freelance. Diseño web responsive. Optimización SEO - Política de cookies',

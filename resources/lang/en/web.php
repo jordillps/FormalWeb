@@ -85,7 +85,7 @@ return [
     'about-me' => 'About me',
     'services' => 'Services',
     'projects' => 'Projects',
-    'blog' => 'Blog',
+    'blog' => 'Posts',
     'contact' => 'Contact',
     'all-rights-reserved' => 'All rights reserved',
     'legal-notice' => 'Legal notice',

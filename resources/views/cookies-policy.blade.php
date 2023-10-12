@@ -14,8 +14,11 @@
     <!-- SEO Json-Ld -->
     {!! JsonLd::generate() !!}
 
+    <link rel="alternate" hreflang="ca" href="{{ LaravelLocalization::getLocalizedURL('ca') }}">
     @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
-        <link rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+        @if($localeCode != 'ca')
+            <link rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+        @endif
     @endforeach
     <link rel="alternate" hreflang="x-default" href="{{ LaravelLocalization::getLocalizedURL('ca') }}">
     <link rel="canonical" href="{{ LaravelLocalization::getLocalizedURL()}}">
