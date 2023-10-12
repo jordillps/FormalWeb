@@ -41,7 +41,7 @@ use App\Http\Controllers\PrivacyPolicyController;
 */
 
 Route::group(['prefix' => LaravelLocalization::setLocale(),
-'middleware' => ['localizationRedirect']
+// 'middleware' => ['localizationRedirect']
 ], function(){
     //Web
     Route::get('/', [HomeWebController::class,'index'])->name('home');
