@@ -11,7 +11,7 @@ class optimize extends Command
      *
      * @var string
      */
-    protected $signature = 'moneder:optimize';
+    protected $signature = 'formalweb:optimize';
 
     /**
      * The console command description.
@@ -42,12 +42,14 @@ class optimize extends Command
         $optimize = shell_exec('php artisan optimize');
         $this->info($optimize);
 
-        // running `php artisan optimize`
-        // $this->warn('Execution php artisan route:trans:cache');
-        // $optimize = shell_exec('php artisan route:trans:cache');
-        // $this->info($optimize);
+        $this->warn('Execution php artisan route:trans:cache');
+        $optimize = shell_exec('php artisan route:trans:cache');
+        $this->info($optimize);
 
-        // running `php artisan optimize`
+        $this->warn('Execution php artisan cache:clear');
+        $optimize = shell_exec('php artisan cache:clear');
+        $this->info($optimize);
+
         $this->warn('Execution php artisan route:clear');
         $optimize = shell_exec('php artisan route:clear');
         $this->info($optimize);
