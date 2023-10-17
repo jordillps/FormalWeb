@@ -1,5 +1,5 @@
 <?php
-// resources/lang/ca/routes.php
+// resources/lang/es/routes.php
 return [
     "about"    =>  "sobre-mi-desarollador-web",
     "services" => "servicios-desarollador-web-seo",
