@@ -143,7 +143,9 @@ Route::group(['middleware' => ['auth']], function () {
 // Route::redirect('/servicios-diseño-web-posicionamiento-seo-lleida.html', '/servicios-desarrollo-web-seo', 301);
 // Route::redirect('/contacto-formal-web-lleida.php', '/contacto-formal-web-lleida', 301);
 // Route::redirect('/contacto-formal-web-lleida.es.php', '/contacto-formal-web-lleida', 301);
-Route::redirect('/contacto', '/contacto-formal-web-lleida', 301);
+Route::redirect('/contacto-formal-web-lleida', '/ca/contacte-formal-web-lleida', 301);
+Route::redirect('/proyectos-desarrollo-web-seo', '/ca/projectes-desenvolupament-web-seo', 301);
+Route::redirect('/sobre-mi-desarollador-web', '/ca/sobre-mi-desenvolupament-web', 301);
 
 
 
