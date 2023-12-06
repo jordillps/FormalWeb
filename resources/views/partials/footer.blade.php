@@ -25,7 +25,7 @@
                                 <i class='bx bxl-linkedin'></i></a></li>
                             <li><a href="{{ $setting->twitter_url }}" target="blank" aria-label="twitter">
                                 <span class="visually-hidden">Twitter</span>
-                                <i alt="logo twitter" class='bx bxl-twitter' ></i></a></li>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><g fill="#ffffff"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></g></svg></a></li>
                             <li><a href="{{ $setting->facebook_url }}" target="blank" aria-label="facebook">
                                 <span class="visually-hidden">Facebook</span>
                                 <i alt="logo facebook" class='bx bxl-facebook' ></i></a></li>
