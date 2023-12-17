@@ -86,7 +86,7 @@
                                 <h2>{{ $loop->index + 1 }}</h2>
                             </div>
                             <div class="content">
-                                <h3>{{ $service->{'title:'. app()->getLocale()} }}</h3>
+                                <h2>{{ $service->{'title:'. app()->getLocale()} }}</h2>
                                 <p>{{ $service->{'text:'. app()->getLocale()} }}</p>
                             </div>
                             @if(count($service->getMedia('images'))>0)
