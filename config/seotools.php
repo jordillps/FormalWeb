@@ -36,7 +36,7 @@ return [
          * The default configurations to be used by the opengraph generator.
          */
         'defaults' => [
-            'title'       => 'Diseño web Lleida - Diseño de páginas web, SEO', // set false to total remove
+            'title'       => 'Diseño web Mollerussa - Diseño de páginas web, SEO', // set false to total remove
             'description' => 'Diseño web responsive, adaptado a todos los dispositivos. Diseño personalizado. Optimitzación SEO. Anàlitica SEO. Diseño de aplicaciones web', // set false to total remove
             'url'         => null, // Set null for using Url::current(), set false to total remove
             'type'        => false,
