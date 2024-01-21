@@ -79,7 +79,7 @@ cc.run({
                 blocks: [
                     {
                         title: 'Ús de les cookies',
-                        description: 'Utilitzem cookies per garantir les funcionalitats bàsiques del lloc web i per millorar la teva experiència en línia. Pots escollir per a cada categoria per activar/desactivar-te quan vulguis. Per obtenir més informació sobre les galetes i altres dades sensibles, llegiu la <a href="https://laraveltest.dev/politica-cookies" class="cc-link">política de cookies</a> completa.'
+                        description: 'Utilitzem cookies per garantir les funcionalitats bàsiques del lloc web i per millorar la teva experiència en línia. Pots escollir per a cada categoria per activar/desactivar-te quan vulguis. Per obtenir més informació sobre les galetes i altres dades sensibles, llegiu la <a href="https://formalweb.cat/politica-cookies" class="cc-link">política de cookies</a> completa.'
                     }, {
                         title: 'Cookies estrictament necessàries',
                         description: 'Aquestes cookies són essencials per al bon funcionament del meu lloc web. Sense aquestes cookies, el lloc web no funcionaria correctament',
@@ -98,18 +98,18 @@ cc.run({
                         },
                         cookie_table: [
                             {
-                                col1: '^_ga',
+                                col1: '_ga',
                                 col2: 'google.com',
-                                col3: '1 any',
-                                // col4: 'description ...',
+                                col3: '13 mesos',
+                                col4: 'Es fa servir per distingir els usuaris.',
                                 is_regex: true
                             },
-                            // {
-                            //     col1: '_gid',
-                            //     col2: 'google.com',
-                            //     col3: '1 day',
-                            //     col4: 'description ...',
-                            // }
+                            {
+                                col1: '_ga_EPWXYKMD2W',
+                                col2: 'google.com',
+                                col3: '13 mesos',
+                                col4: 'Es fa servir per mantenir l\'estat de la sessió.',
+                            }
                         ]
                     }, 
                     // {
