@@ -72,7 +72,19 @@ return [
     'your-message' => 'El teu missatge',
     'send-message' => 'Enviar missatge',
     'accept-privacy-policy' => 'Accepto la seva',
-
+    'responsible' => 'Responsable:',
+    'purpose' => 'Finalitat:',
+    'purpose-answer' => 'Gestió de la sol·licitud de contacte',
+    'legitimation' => 'Legitimació:',
+    'legitimation-answer' => 'Consentiment de l’interessat',
+    'term-of-conservation' => 'Termini de conservació:',
+    'term-of-conservation-answer' => 'Les dades es conservaran fins que finalitzi el tràmit de contacte i, en qualsevol cas, quan l’interessat revoqui el seu consentiment.',
+    'recipients' => 'Destinataris:',
+    'recipientsans-answer' => 'No es cediran dades a tercers excepte obligació legal.',
+    'rights' => 'Drets:',
+    'rights-answer' => 'Accedir, rectificar i suprimir les dades',
+    'additional-information' => 'Informació addicional:',
+    
     //Footer, NavBar
     'lets-chat' => 'Contacte',
     'follow-me' => 'Segueix-me',

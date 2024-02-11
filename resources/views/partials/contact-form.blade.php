@@ -77,6 +77,15 @@
                         {{-- <button class="eg-btn btn--primary btn--md form--btn g-recaptcha" data-sitekey="{{ env('RECAPTCHA_SITE_KEY') }}" data-callback="onSubmit" data-action="submit" type="submit">{{ __('web.send-message') }}</button> --}}
                     </div>
                 </div>
+                <ul class="border" style="color:#ffffff;font-size:0.7rem; padding:0.7em;">
+                    <li><strong>{{ __('web.responsible') }}</strong> Jordi Llobet Palau</li>
+                    <li><strong>{{ __('web.purpose') }}</strong> {{ __('web.purpose-answer') }}</li>
+                    <li><strong>{{ __('web.legitimation') }}</strong> {{ __('web.legitimation-answer') }}</li>
+                    <li><strong>{{ __('web.term-of-conservation') }}</strong> {{ __('web.term-of-conservation-answer') }}</li>
+                    <li><strong>{{ __('web.recipients') }}</strong> {{ __('web.recipientsans-answer') }}</li>
+                    <li><strong>{{ __('web.rights') }}</strong> {{ __('web.rights-answer') }} </li>
+                    <li><strong>{{ __('web.additional-information') }}</strong> <a href={{ route('privacy-policy') }} accesskey="r"><span style="text-decoration: underline;">{{ __('web.privacy-policy') }}</span></a></li>
+                </ul> 
             </div>
         </form>
     </div>

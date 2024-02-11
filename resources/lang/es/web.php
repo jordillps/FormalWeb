@@ -75,6 +75,18 @@ return [
     'your-message' => 'Tu mensaje',
     'send-message' => 'Enviar mensaje',
     'accept-privacy-policy' => 'Acepto su',
+    'responsible' => 'Responsable:',
+    'purpose' => 'Finalidad:',
+    'purpose-answer' => 'Gestión de la solicitud de contacto',
+    'legitimation' => 'Legitimación:',
+    'legitimation-answer' => 'Consentimiento del interesado',
+    'term-of-conservation' => 'Plazo de conservación:',
+    'term-of-conservation-answer' => 'Los datos se conservarán hasta que finalice el trámite de contacto y, en qualquier caso, cuando el interesado revoque su consentimiento.',
+    'recipients' => 'Destinatarios:',
+    'recipientsans-answer' => 'No se cederán datos a tercers excepto obligación legal.',
+    'rights' => 'Derechos:',
+    'rights-answer' => 'Acceder, rectificar y suprimir los datos',
+    'additional-information' => 'Información adicional:',
 
     //Footer
     'lets-chat' => 'Contacto',

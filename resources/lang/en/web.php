@@ -77,6 +77,18 @@ return [
     'your-message' => 'Your message',
     'send-message' => 'Send message',
     'accept-privacy-policy' => 'Accept your',
+    'responsible' => 'Responsible:',
+    'purpose' => 'Purpose:',
+    'purpose-answer' => 'Contact request management',
+    'legitimation' => 'Legitimation:',
+    'legitimation-answer' => 'Consent of the interested party',
+    'term-of-conservation' => 'Conservation period:',
+    'term-of-conservation-answer' => 'The data will be kept until the contact process is completed and, in any case, when the interested party revokes their consent.',
+    'recipients' => 'Recipients:',
+    'recipientsans-answer' => 'No data will be transferred to third parties except legal obligation.',
+    'rights' => 'Rights:',
+    'rights-answer' => 'Access, rectify and delete data',
+    'additional-information' => 'Additional Information:',
 
     //Footer
     'lets-chat' => 'Contact',
