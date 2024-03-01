@@ -2,17 +2,17 @@
 
 return [
 
-    'home-title' => 'Disseny web Mollerussa, SEO web, pàgines web Mollerussa',
-    'home-description' => 'Dissenyador de pàgines web a Mollerussa, estudi de SEO per al posicionament web, desenvolupament aplicacions web
-    ',
-    'about-me-title' => 'Dissenyador web freelance a Mollerussa, posicionament SEO',
-    'about-me-description' => 'Disseny de pàgines web a Lledia, estudi de SEO per al posicionament web, desenvopulament d\'aplicacions web
-    ',
+    'home-title' => 'Serveis professionals de desenvolupament web a Mollerussa',
+    'home-description' => 'Eleva el teu negoci a Lleida amb dissenys web personalitzats i responsive que asseguren que el teu lloc destaqui. Serveis de SEO i màrqueting digital a mida per a tu. ',
+
+    'about-me-title' => 'Desenvolupador web a Mollerussa - Solucions per a empreses',
+    'about-me-description' => 'Desbloqueja el potencial del teu negoci amb un disseny web innovador. Especialitzats en pàgines web responsives, SEO i estratègies de creixement online',
+
     'services-title' => 'Serveis de disseny web responsive, anàlisis SEO Google',
-    'services-description' => 'Serveis de disseny web responsive i administrable, projectes web, aplicacions web, anàlitica SEO Google 
-    ',
-    'projects-title' => 'Desenvolupament Projectes web totalment personalitzats',
-    'projects-description' => 'Disseny i desenvolupament de projectes web per a la seva empresa. Disseny personalitzat a mida dels clients',
+    'services-description' => 'Transforma la teva identitat online amb els nostres serveis de disseny web a Lleida. Expertesa en crear pàgines web personalitzades.',
+    'projects-title' => 'Desenvolupament web - Creació i disseny web a Mollerussa',
+    'projects-description' => 'A formalweb.cat, oferim solucions efectives en desenvolupament web. Tendències digitals per al teu èxit.',
+    
     'contact-title' => 'Pàgines web professionals a Mollerussa',
     'contact-description' => 'Disseny professional de pàgines web a Mollerussa, serà un plaer ajudar-vos en el vostre projecte web',
     'blog-title' => 'Bloc de desenvolupament web',

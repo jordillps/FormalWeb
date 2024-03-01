@@ -2,13 +2,13 @@
 
 return [
 
-    'home-title' => 'Professional web design, web positioning, SEO',
-    'home-description' => 'Professional web page design, SEO for organic positioning, web application development',
+    'home-title' => 'Top Web Solutions in Lleida: Design, SEO & Development',
+    'home-description' => 'Elevate your business in Lleida with custom, responsive web designs that ensure your site stands out. SEO & digital marketing services tailored for you',
     'about-me-title' => 'Freelance web designer in Lleida, SEO positioning',
-    'about-me-description' => 'Web page design in Lledia, SEO study for web positioning, web application development',
+    'about-me-description' => 'Unlock the potential of your business with Lleida\'s leading web design agency. Specializing in responsive websites, SEO, and online growth strategies',
     'services-title' => 'Responsive web design services, on-page SEO analysis',
-    'services-description' => 'Responsive and manageable web design services, on-page SEO analytics to achieve positioning',
-    'projects-title' => 'Development of fully customized web projects',
+    'services-description' => 'Transform your online identity with our Lleida web design services. Expertise in creating custom, user-friendly websites and enhancing digital presence',
+    'projects-title' => 'Lleida\'s Premier Web Design Agency | Transform Your Online Presence',
     'projects-description' => 'Design and development of web projects for your company. Customized design tailored to clients',
     'contact-title' => 'Professional web page design in Lleida',
     'contact-description' => 'Professional web page design in Lleida, it will be a pleasure to help you in your web project',
