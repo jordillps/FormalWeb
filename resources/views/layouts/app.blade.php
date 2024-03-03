@@ -47,7 +47,7 @@
     @stack('styles')
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
+    {{-- <script
         rel="dns-prefetch"
         src="https://www.googletagmanager.com/gtag/js?id=G-EPWXYKMD2W"
         ></script>
@@ -59,7 +59,7 @@
         gtag("js", new Date());
 
         gtag("config", "G-EPWXYKMD2W");
-        </script>
+        </script> --}}
 
     <!-- Google Tag Manager -->
     <script>
