@@ -93,7 +93,7 @@ cc.run({
                         description: 'Ens permeten quantificar el nombre d\'usuaris i així realitzar el mesurament i anàlisi estadística de la utilització que fan del servei ofert',
                         toggle: {
                             value: 'analytics',     // there are no default categories => you specify them
-                            enabled: false,
+                            enabled: true,
                             readonly: false
                         },
                         cookie_table: [
