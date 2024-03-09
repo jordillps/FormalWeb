@@ -10334,7 +10334,7 @@ margin-top: -130px;
           align-items: center;
 }
 
-.project-details .project-sidebar .client-deatils ul li p:hover {
+.project-details .project-sidebar .client-deatils ul li .h6:hover {
   color:#ffffff;
 }
 
