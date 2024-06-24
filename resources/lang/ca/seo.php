@@ -3,7 +3,7 @@
 return [
 
     'home-title' => 'Serveis professionals de desenvolupament web a Mollerussa',
-    'home-description' => 'Eleva el teu negoci a Lleida amb dissenys web personalitzats i responsive que asseguren que el teu lloc destaqui. Serveis de SEO i màrqueting digital a mida per a tu. ',
+    'home-description' => 'Eleva el teu negoci a Lleida amb dissenys web personalitzats i responsive fan que destacar el teu lloc web. Serveis de SEO i màrqueting digital a mida.',
 
     'about-me-title' => 'Desenvolupador web a Mollerussa - Solucions per a empreses',
     'about-me-description' => 'Desbloqueja el potencial del teu negoci amb un disseny web innovador. Especialitzats en pàgines web responsives, SEO i estratègies de creixement online',
