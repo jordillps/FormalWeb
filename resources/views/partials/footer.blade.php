@@ -50,7 +50,7 @@
                         </div>
                         <span><a href="{{ route('legal-notice') }}" accesskey="l">{{ __('web.legal-notice') }}</a> | <a href={{ route('privacy-policy') }} accesskey="r">{{ __('web.privacy-policy') }}</a> | <a href={{ route('cookies-policy') }} accesskey="o">{{ __('web.cookies-policy') }}</a></span>
                         <div>
-                            <span>{{__('web.developed-by') }} <a href="https://javajan.es/">Serveis d'Internet Javajan</a></span>
+                            <span>{{__('web.developed-by') }} <a href="https://formalweb.cat">Formal Web</a></span>
                         </div>
                     </div>
                     <div class="footer-img">
