@@ -1,7 +1,9 @@
 @extends('layouts.app')
 
 @push('styles')
-  
+<link href='http://fonts.googleapis.com/css?family=Enriqueta:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ asset('css/web/blog-details.css') }}">
+
 @endpush
 
 @section('seo')
@@ -52,7 +54,7 @@
 <div class="blog-details pt-120 mb-120">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 order-lg-1 order-2 wow animate fadeInDown" data-wow-delay="200ms" data-wow-duration="1500ms">
+            <div class="col-lg-8 order-lg-1 order-2 wow animate fadeInDown" data-wow-delay="200ms" data-wow-duration="1500ms" id="post-details">
                 <div class="blog-dt-wrrap">
                     @if(count($post->getMedia('images'))>1)
                         <div class="blog-dt-img">
