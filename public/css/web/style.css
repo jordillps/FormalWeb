@@ -2912,7 +2912,7 @@ header.style-1 .mobile-menu-form .hotline .hotline-info h6 {
   color: #17161A;
   -webkit-transition: 0.35s;
   transition: 0.35s;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 
 .home-1-blog .blog-wrrap .blog-content .h4 a:hover,

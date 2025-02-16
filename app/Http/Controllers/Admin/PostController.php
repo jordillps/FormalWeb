@@ -114,7 +114,7 @@ class PostController extends Controller
 
         if(!isset($request->isPublished)){
             $post->isPublished = 0;
-            $post->published_at = null;
+            // $post->published_at = null;
             $post->save();
         }
 
