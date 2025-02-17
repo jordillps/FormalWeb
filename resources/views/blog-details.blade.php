@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @push('styles')
-<link href='http://fonts.googleapis.com/css?family=Enriqueta:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Enriqueta:400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="{{ asset('css/web/blog-details.css') }}">
 
 @endpush
