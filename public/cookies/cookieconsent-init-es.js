@@ -2,7 +2,7 @@
 var cc = initCookieConsent();
 
 // example logo
-var logo = 'Configuració de cookies';
+var logo = 'Configuración de cookies';
 var cookie = '';
 
 // run plugin with config object
