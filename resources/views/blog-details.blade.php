@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @push('styles')
-<link href='https://fonts.googleapis.com/css?family=Enriqueta:400,700' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="{{ asset('css/web/blog-details.css') }}">
-
+    <link href='https://fonts.googleapis.com/css?family=Enriqueta:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ asset('css/web/blog-details.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/web/default.min.css') }}">
 @endpush
 
 @section('seo')
@@ -221,5 +221,16 @@
 @endsection
 
 @push('scripts')
+
+{{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/highlight.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelectorAll('pre code').forEach((block) => {
+        hljs.highlightBlock(block);
+    });
+});
+</script> --}}
+<script src="{{ asset('js/web/highlight.min.js') }}"></script>
+<script>hljs.highlightAll();</script>
   
 @endpush
