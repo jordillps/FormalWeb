@@ -152,6 +152,22 @@
                                     {{ $about->git }}
                                 </div>
                             </div>
+                            <div class="col-12 col-md-3">
+                                <div class="callout callout-primary">
+                                    <div>
+                                        <strong>Python:</strong>
+                                    </div>
+                                    {{ $about->python }}
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="callout callout-primary">
+                                    <div>
+                                        <strong>Machine Learning:</strong>
+                                    </div>
+                                    {{ $about->machinelearning }}
+                                </div>
+                            </div>
                         </div>   
                         <div class="callout callout-primary">
                             <strong>{{ __('global.image') }}:</strong>

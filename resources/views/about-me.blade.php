@@ -204,6 +204,20 @@
                                                     <span>{{ $about->git }}%</span>
                                                 </div>
                                             </div>
+                                            <div class="progress-items">
+                                                <h6>Python</h6>
+                                                <div class="donate">
+                                                    <div class="donate-done" style="width:{{ $about->python }}%;"></div>
+                                                    <span>{{ $about->python }}%</span>
+                                                </div>
+                                            </div>
+                                            <div class="progress-items">
+                                                <h6>Machine Learning</h6>
+                                                <div class="donate">
+                                                    <div class="donate-done" style="width:{{ $about->machinelearning }}%;"></div>
+                                                    <span>{{ $about->machinelearning }}%</span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

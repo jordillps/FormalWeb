@@ -44,9 +44,9 @@
 											<td>{{ $about->phone }}</td>
 											
                                             <td>
-                                                <a class="btn btn-sm btn-primary " href="{{ route('abouts.show',$about->id) }}"><i class="fa fa-fw fa-eye"></i>{{ __("global.show") }}</a>
+                                                {{-- <a class="btn btn-sm btn-primary " href="{{ route('abouts.show',$about->id) }}"><i class="fa fa-fw fa-eye"></i>{{ __("global.show") }}</a> --}}
                                                     <a class="btn btn-sm btn-success" href="{{ route('abouts.edit',$about->id) }}"><i class="fa fa-fw fa-edit"></i>{{ __("global.edit") }}</a>
-                                                    <button type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-item-id="{{ $about->id }}" data-target="#modal-delete"><i class="fa fa-fw fa-trash"></i>{{ __("global.delete") }}</button>
+                                                    {{-- <button type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-item-id="{{ $about->id }}" data-target="#modal-delete"><i class="fa fa-fw fa-trash"></i>{{ __("global.delete") }}</button> --}}
                                             </td>
                                         </tr>
                                     @endforeach

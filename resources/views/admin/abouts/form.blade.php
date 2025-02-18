@@ -119,6 +119,20 @@
                 {!! $errors->first('git', '<div class="invalid-feedback">:message</div>') !!}
             </div>
           </div>
+          <div class="col-12 col-md-3">
+            <div class="form-group">
+                {{ Form::label('python') }}
+                {{ Form::text('python', $about->python, ['class' => 'form-control' . ($errors->has('python') ? ' is-invalid' : ''), 'placeholder' => 'Python']) }}
+                {!! $errors->first('python', '<div class="invalid-feedback">:message</div>') !!}
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="form-group">
+                {{ Form::label('Machine Learning') }}
+                {{ Form::text('machinelearning', $about->machinelearning, ['class' => 'form-control' . ($errors->has('machinelearning') ? ' is-invalid' : ''), 'placeholder' => 'Machine Learning']) }}
+                {!! $errors->first('machinelearning', '<div class="invalid-feedback">:message</div>') !!}
+            </div>
+          </div>
         </div>
         <div class="form-group">
           <label for="document">{{ __('global.image-uploaded-warining-1') }}</label>

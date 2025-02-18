@@ -42,7 +42,7 @@ class About extends Model implements HasMedia, TranslatableContract
      *
      * @var array
      */
-    protected $fillable = ['name','email','phone','html','css','php','javascript', 'bootstrap', 'laravel', 'mysql', 'git', 'city'];
+    protected $fillable = ['name','email','phone','html','css','php','javascript', 'bootstrap', 'laravel', 'mysql', 'git', 'city', "python", "machineelearning"];
 
 
     public function medias()
