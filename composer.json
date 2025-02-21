@@ -17,6 +17,7 @@
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
         "laravel/ui": "^3.4",
+        "laravelcollective/html": "^6.4",
         "mcamara/laravel-localization": "^1.8",
         "spatie/laravel-medialibrary": "^9.0.0",
         "spatie/laravel-sitemap": "^6.2",
