@@ -3069,28 +3069,28 @@
    * SummerNote
    * ====================================================
    */
-  $('#summernote').summernote({
-    tabsize: 2,
-    height: 500,
-    focus: true,
-    toolbar: [
-      ['style', ['bold', 'italic', 'underline', 'clear']],
-      ['font', ['strikethrough', 'superscript', 'subscript']],
-      ['fontsize', ['fontsize']],
-      ['color', ['color']],
-      ['para', ['ul', 'ol', 'paragraph']],
-      ['view', ['fullscreen', 'codeview', 'help']],
-      ['picture'],
-      ['link'],
-      ['video'],
-      ['table'],
-      ['undo'],
-      ['redo']
-    ],
+  // $('#summernote').summernote({
+  //   tabsize: 2,
+  //   height: 500,
+  //   focus: true,
+  //   toolbar: [
+  //     ['style', ['bold', 'italic', 'underline', 'clear']],
+  //     ['font', ['strikethrough', 'superscript', 'subscript']],
+  //     ['fontsize', ['fontsize']],
+  //     ['color', ['color']],
+  //     ['para', ['ul', 'ol', 'paragraph']],
+  //     ['view', ['fullscreen', 'codeview', 'help']],
+  //     ['picture'],
+  //     ['link'],
+  //     ['video'],
+  //     ['table'],
+  //     ['undo'],
+  //     ['redo']
+  //   ],
     
-  });
+  // });
 
-  $('#body_editor').summernote('removeFormat');
+  // $('#body_editor').summernote('removeFormat');
 
 
 
