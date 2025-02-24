@@ -9,6 +9,7 @@ use Astrotomic\Translatable\Translatable;
 use App\Models\Setting;
 use Artesaos\SEOTools\Facades\SEOTools;
 use Artesaos\SEOTools\Facades\JsonLd;
+use App\Models\Category;
 
 
 
@@ -21,13 +22,15 @@ class BlogWebController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
         SEOTools::setTitle(trans('seo.blog-title'));
         SEOTools::setDescription(trans('seo.blog-description'));
 
         JsonLd::setTitle(trans('seo.blog-title'));
         JsonLd::setDescription(trans('seo.blog-description'));
+
+        // dd($request->all());
         
         $posts = Post::where('isPublished', true)
         // ->leftJoin('post_translations', 'post_translations.post_id', 'posts.id')
@@ -41,7 +44,13 @@ class BlogWebController extends Controller
         // });
         // return  $posts;
 
-        return view('blog', compact('posts'));
+        if ($request->has('category') && $request->category != '') {
+            $posts = Post::where('category_id', $request->category)->paginate(12);
+        }
+    
+        $categories = Category::all();
+
+        return view('blog', compact('posts', 'categories'));
     }
 
     /**

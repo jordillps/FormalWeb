@@ -57,6 +57,7 @@ return [
     'previous-post' => 'Publicació anterior',
     'related-posts' => 'Publicacions relacionades',
     'blog-details' => "Detalls de la publicació",
+    'filter-by-category' => 'Filtrar per categoria',
 
 
     //Contact

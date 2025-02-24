@@ -51,6 +51,19 @@
     <div class="home-1-blog pt-120 mb-120">
         <div class="container">
             <div class="row g-4">
+                <h5>{{ __('web.filter-by-category') }}</h5>
+                <!-- Form to filter by category -->
+                <div class="col-12 mb-5 mt-0">
+                    <form action="{{ route('blog') }}" method="GET">
+                        <input type="submit" name="category" id="all" autocomplete="off" value="" style="display: none;">
+                        <label class="eg-btn filters {{ request('category') == '' ? 'checked' : '' }} mb-1" for="all">Todas</label>
+                        @foreach($categories as $category)
+                            <input type="submit" name="category" id="{{ $category->id }}" autocomplete="off" value="{{ $category->id }}" style="display: none;">
+                            <label class="eg-btn filters {{ request('category') == $category->id ? 'checked' : '' }}" for="{{ $category->id }}">{{ $category->{'name:'. app()->getLocale()} }}</label>
+                        @endforeach
+                    </form>
+                </div>
+                <!-- End Form to filter by category -->
                 @foreach($posts as $post)
                     <div class="col-lg-4 col-sm-6 wow animate fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
                         <div class="blog-wrrap">

@@ -62,6 +62,7 @@ return [
     'previous-post' => 'Previous Post',
     'related-posts' => 'Related posts',
     'blog-details' => "Blog details",
+    'filter-by-category' => 'Filter by category',
 
 
     //Contact
