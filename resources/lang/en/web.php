@@ -63,6 +63,7 @@ return [
     'related-posts' => 'Related posts',
     'blog-details' => "Blog details",
     'filter-by-category' => 'Filter by category',
+    'all' => 'All',
 
 
     //Contact

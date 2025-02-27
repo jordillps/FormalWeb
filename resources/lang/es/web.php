@@ -61,6 +61,7 @@ return [
     'related-posts' => 'Publicaciones relacionadas',
     'blog-details' => "Detalles de la publicación",
     'filter-by-category' => 'Filtrar por categoría',
+    'all' => 'Todas',
 
 
     //Contact

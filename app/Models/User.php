@@ -11,6 +11,7 @@ use Laravel\Sanctum\HasApiTokens;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Carbon\Carbon;
+use Laravelista\Comments\Commenter;
 
 /**
  * Class User
@@ -31,9 +32,11 @@ use Carbon\Carbon;
  * @mixin \Illuminate\Database\Eloquent\Builder
  */
 class User extends Authenticatable implements HasMedia{
-    use HasApiTokens, HasFactory, Notifiable;
+    use HasApiTokens, HasFactory, Notifiable, Commenter;
 
     use InteractsWithMedia;
+
+    // use Commenter;
     /**
      * Attributes that should be mass-assignable.
      *

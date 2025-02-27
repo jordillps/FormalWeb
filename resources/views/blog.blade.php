@@ -56,7 +56,7 @@
                 <div class="col-12 mb-5 mt-0">
                     <form action="{{ route('blog') }}" method="GET">
                         <input type="submit" name="category" id="all" autocomplete="off" value="" style="display: none;">
-                        <label class="eg-btn filters {{ request('category') == '' ? 'checked' : '' }} mb-1" for="all">Todas</label>
+                        <label class="eg-btn filters {{ request('category') == '' ? 'checked' : '' }} mb-1" for="all">{{ __('web.all') }}</label>
                         @foreach($categories as $category)
                             <input type="submit" name="category" id="{{ $category->id }}" autocomplete="off" value="{{ $category->id }}" style="display: none;">
                             <label class="eg-btn filters {{ request('category') == $category->id ? 'checked' : '' }}" for="{{ $category->id }}">{{ $category->{'name:'. app()->getLocale()} }}</label>
