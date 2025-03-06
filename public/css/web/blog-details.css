@@ -108,3 +108,10 @@
 #post-details div div.caption p {
 	margin-bottom: 0;
 }
+
+#post-details a{
+	color: #4472c4;
+	font-family: "Enriqueta", serif;
+	font-style: normal;
+	text-decoration: none;
+}
