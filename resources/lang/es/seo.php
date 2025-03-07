@@ -2,12 +2,12 @@
 
 return [
 
-    'home-title' => 'Diseño Web Profesional en Lleida | Web a Medida y Responsive',
-    'home-description' => 'Impulsa tu negocio en Mollerussa con diseños web personalizados y responsive que destacan tu sitio. Servicios SEO y de marketing digital adaptados a ti',
-    'about-me-title' => 'Diseñador web freelance en Mollerussa, posicionamiento SEO',
-    'about-me-description' => 'Maximiza el potencial de tu negocio con diseño web profesional. Especialistas en sitios web responsivos, SEO y estrategias de crecimiento online',
-    'services-title' => 'Soluciones Web en Lleida: Diseño, SEO y Desarrollo a Medida',
-    'services-description' => 'Transforma tu identidad online con nuestros servicios de diseño web. Experticia en crear sitios web atractivos, fáciles de usar y mejorar tu presencia digital',
+    'home-title' => 'Diseño Web en Lleida | Webs Profesionales y Optimización SEO',
+    'home-description' => 'Ofrecemos diseño web en Lleida para negocios y emprendedores. Sitios web atractivos, rápidos y optimizados para SEO. ¡Haz despegar tu presencia online!',
+    'about-me-title' => 'Desarrollador Web Freelance | Diseño y Optimización Profesional',
+    'about-me-description' => '¿Buscas un desarrollador web freelance? Diseño y optimizo sitios web profesionales, rápidos y adaptados a tus necesidades. ¡Haz crecer tu negocio online hoy!',
+    'services-title' => 'Diseño Web a Medida | Webs Profesionales y Optimización SEO',
+    'services-description' => 'Creamos diseño web a medida adaptado a tus necesidades. Sitios web profesionales, funcionales y optimizados para SEO. ¡Haz crecer tu negocio online!',
     'projects-title' => 'Desarrollo Proyectos web totalmente personalizados',
     'projects-description' => 'Diseño y desarrollo de proyectos web para su empresa. Diseño personalizado a medida de los clientes',
     'contact-title' => 'Diseño profesional de páginas  web en Mollerussa',
