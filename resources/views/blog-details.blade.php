@@ -55,7 +55,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 order-lg-1 order-2 wow animate fadeInDown" data-wow-delay="200ms" data-wow-duration="1500ms" id="post-details">
-                <div class="blog-dt-wrrap">
+                <div class="blog-dt-wrrap mb-4">
                     @if(count($post->getMedia('images'))>1)
                         <div class="blog-dt-img">
                             <img class="img-fluid" src="{{ $post->getMedia('images')[1]->getUrl() }}" alt="{{ $post->{'title:'. app()->getLocale()} }}" title="{{ $post->{'title:'. app()->getLocale()} }}">
@@ -122,6 +122,7 @@
                         </div>
                     </div>
                 </div>
+                @comments(['model' => $post, 'maxIndentationLevel' => 1])
             </div>
             <div class="col-lg-4 order-lg-2 order-1">
                 <div class="blog-sidebar">
@@ -222,14 +223,7 @@
 
 @push('scripts')
 
-{{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/highlight.min.js"></script>
-<script>
-document.addEventListener('DOMContentLoaded', (event) => {
-    document.querySelectorAll('pre code').forEach((block) => {
-        hljs.highlightBlock(block);
-    });
-});
-</script> --}}
+
 <script src="{{ asset('js/web/highlight.min.js') }}"></script>
 <script>hljs.highlightAll();</script>
   

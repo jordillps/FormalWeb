@@ -30,7 +30,7 @@
                         </div>
                     @enderror
                 </div>
-                <div class="form-group">
+                {{-- <div class="form-group">
                     <label for="message">@lang('comments::comments.enter_your_email_here')</label>
                     <input type="email" class="form-control @if($errors->has('guest_email')) is-invalid @endif" name="guest_email" />
                     @error('guest_email')
@@ -38,7 +38,7 @@
                             {{ $message }}
                         </div>
                     @enderror
-                </div>
+                </div> --}}
             @endif
 
             <div class="form-group mb-2">

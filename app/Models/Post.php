@@ -10,6 +10,7 @@ use Spatie\MediaLibrary\InteractsWithMedia;
 use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
 use Astrotomic\Translatable\Translatable;
 use Carbon\Carbon;
+use Laravelista\Comments\Commentable;
 
 /**
  * Class Post
@@ -28,17 +29,15 @@ use Carbon\Carbon;
  * @property $updated_at
  *
  * @property Category $category
- * @property Comment[] $comments
  * @property User $user
  * @package App
  * @mixin \Illuminate\Database\Eloquent\Builder
  */
 class Post extends Model implements HasMedia, TranslatableContract
 {
-    use HasFactory;
-    use Translatable;
-
-    use InteractsWithMedia;
+    use HasFactory, Translatable, InteractsWithMedia, Commentable;
+    // use HasFactory, Translatable, InteractsWithMedia;
+    
 
     protected $dates = ['published_at'];
 
@@ -64,13 +63,13 @@ class Post extends Model implements HasMedia, TranslatableContract
         return $this->belongsTo(Category::class);
     }
     
-    /**
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
-     */
-    public function comments()
-    {
-        return $this->hasMany('App\Models\Comment', 'post_id', 'id');
-    }
+    // /**
+    //  * @return \Illuminate\Database\Eloquent\Relations\HasMany
+    //  */
+    // public function comments()
+    // {
+    //     return $this->hasMany('App\Models\Comment', 'post_id', 'id');
+    // }
 
     public function tags(){
         return $this->belongsToMany(Tag::class);
