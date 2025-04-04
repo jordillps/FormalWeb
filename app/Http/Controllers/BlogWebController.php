@@ -83,10 +83,10 @@ class BlogWebController extends Controller
     public function show(Post $post)
     {
         //
-        SEOTools::setTitle($post->{'title:'. app()->getLocale()} . ' | Blog');
+        SEOTools::setTitle($post->{'title:'. app()->getLocale()});
         SEOTools::setDescription($post->{'excerpt:'. app()->getLocale()});
 
-        JsonLd::setTitle($post->{'title:'. app()->getLocale()} . ' | Blog');
+        JsonLd::setTitle($post->{'title:'. app()->getLocale()});
         JsonLd::setDescription($post->{'excerpt:'. app()->getLocale()});
         if(count($post->getMedia('images'))>1){
             JsonLd::addImage($post->getMedia('images')[1]->getUrl());
