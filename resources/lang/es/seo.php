@@ -4,8 +4,8 @@ return [
 
     'home-title' => 'Diseño Web en Lleida | Webs Profesionales y Optimización SEO',
     'home-description' => 'Ofrecemos diseño web en Lleida para negocios y emprendedores. Sitios web atractivos, rápidos y optimizados para SEO. ¡Haz despegar tu presencia online!',
-    'about-me-title' => 'Desarrollador Web Freelance | Diseño y Optimización Profesional',
-    'about-me-description' => '¿Buscas un desarrollador web freelance? Diseño y optimizo sitios web profesionales, rápidos y adaptados a tus necesidades. ¡Haz crecer tu negocio online hoy!',
+    'about-me-title' => 'Programador Web Freelance | Diseño y Optimización Profesional',
+    'about-me-description' => '¿Buscas un programador web freelance? Diseño y optimizo sitios web profesionales, rápidos y adaptados a tus necesidades. ¡Haz crecer tu negocio online hoy!',
     'services-title' => 'Diseño Web a Medida | Webs Profesionales y Optimización SEO',
     'services-description' => 'Creamos diseño web a medida adaptado a tus necesidades. Sitios web profesionales, funcionales y optimizados para SEO. ¡Haz crecer tu negocio online!',
     'projects-title' => 'Desarrollo Proyectos web totalmente personalizados',
