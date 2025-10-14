@@ -1882,6 +1882,13 @@ header.style-1 .mobile-menu-form .hotline .hotline-info h6 {
 /*================================================
  7. Home One Service
 =================================================*/
+
+/* RIGHT: Reserves space to prevent layout shift */
+.home-one-services {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 500px;
+}
+
 .services-wrrap {
   background: #FFFFFF;
   -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
@@ -2031,6 +2038,12 @@ header.style-1 .mobile-menu-form .hotline .hotline-info h6 {
 /* .work-area{
   background-image: url(../../img/web/179.png);
 } */
+
+/* RIGHT: Reserves space to prevent layout shift */
+.work-area {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 500px;
+}
 
 .work-area .works-top .works-tab-btn-area ul {
   margin: 0;
