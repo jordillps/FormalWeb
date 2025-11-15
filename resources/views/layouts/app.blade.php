@@ -81,6 +81,13 @@
     <link rel="apple-touch-icon" href="{{ asset('img/web/apple-touch-icon.png') }}">
     <link rel="manifest" href="{{ asset('manifest.json') }}">
 
+    <script type="speculationrules">
+    {
+    "prerender": [{ "where": { "href_matches": "/*" }, "eagerness": "moderate" }],
+    "prefetch": [{ "where": { "href_matches": "/*" }, "eagerness": "moderate" }]
+    }
+    </script>
+
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
