@@ -70,7 +70,12 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "audit": {
+            "ignore": [
+                "CVE-2026-114509"
+            ]
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true
