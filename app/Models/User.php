@@ -11,7 +11,6 @@ use Laravel\Sanctum\HasApiTokens;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Carbon\Carbon;
-use Laravelista\Comments\Commenter;
 
 /**
  * Class User
@@ -32,7 +31,7 @@ use Laravelista\Comments\Commenter;
  * @mixin \Illuminate\Database\Eloquent\Builder
  */
 class User extends Authenticatable implements HasMedia{
-    use HasApiTokens, HasFactory, Notifiable, Commenter;
+    use HasApiTokens, HasFactory, Notifiable;
 
     use InteractsWithMedia;
 

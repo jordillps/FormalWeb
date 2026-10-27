@@ -81,10 +81,14 @@
                                         <a href="#">{{ __('web.by-author') }}</a>
                                     </div>
                                     <div class="date">
-                                        @if(app()->getLocale() == 'en')
-                                            <p>{{ $post->published_at->translatedFormat('Y M d') }}</p>
+                                        @if($post->published_at)
+                                            @if(app()->getLocale() == 'en')
+                                                <p>{{ $post->published_at->translatedFormat('Y M d') }}</p>
+                                            @else
+                                                <p>{{ $post->published_at->translatedFormat('d M Y') }}</p>
+                                            @endif
                                         @else
-                                            <p>{{ $post->published_at->translatedFormat('d M Y') }}</p>
+                                            <p>-</p>
                                         @endif
                                     </div>
                                 </div>

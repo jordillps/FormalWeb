@@ -5,35 +5,32 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "require": {
-        "php": "^8.0",
-        "artesaos/seotools": "^1.1",
+        "php": "^8.3",
+        "artesaos/seotools": "^1.4",
         "astrotomic/laravel-translatable": "^11.11",
-        "diglactic/laravel-breadcrumbs": "^8.0",
-        "fruitcake/laravel-cors": "^2.0",
+        "diglactic/laravel-breadcrumbs": "^10.1",
         "guzzlehttp/guzzle": "^7.0.1",
         "ladumor/laravel-pwa": "^0.0.3",
         "laracasts/flash": "^3.2",
-        "laravel/framework": "^9.0",
-        "laravel/sanctum": "^2.11",
+        "laravel/framework": "^12.69",
+        "laravel/sanctum": "^4.3",
         "laravel/tinker": "^2.5",
-        "laravel/ui": "^3.4",
-        "laravelcollective/html": "^6.4",
-        "laravelista/comments": "dev-master",
-        "mcamara/laravel-localization": "^1.8",
-        "spatie/laravel-medialibrary": "^9.0.0",
-        "spatie/laravel-sitemap": "^6.2",
-        "symfony/mailer": "^6.0"
+        "laravel/ui": "^4.6",
+        "mcamara/laravel-localization": "^2.4",
+        "spatie/laravel-medialibrary": "^11.23",
+        "spatie/laravel-sitemap": "^7.4",
+        "symfony/mailer": "^7.2"
     },
     "require-dev": {
-        "spatie/laravel-ignition": "^1.0",
+        "spatie/laravel-ignition": "^2.12",
         "fakerphp/faker": "^1.9.1",
-        "ibex/crud-generator": "^1.3",
-        "jasonmccreary/laravel-test-assertions": "^2.1",
-        "laravel-shift/blueprint": "^2.1",
+        "ibex/crud-generator": "^2.1",
+        "jasonmccreary/laravel-test-assertions": "^2.9",
+        "laravel-shift/blueprint": "^2.13",
         "laravel/sail": "^1.0.1",
         "mockery/mockery": "^1.4.4",
-        "nunomaduro/collision": "^6.1",
-        "phpunit/phpunit": "^9.5.10"
+        "nunomaduro/collision": "^8.8",
+        "phpunit/phpunit": "^11.5"
     },
     "autoload": {
         "psr-4": {
@@ -70,12 +67,7 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true,
-        "audit": {
-            "ignore": [
-                "CVE-2026-114509"
-            ]
-        }
+        "sort-packages": true
     },
     "minimum-stability": "dev",
     "prefer-stable": true

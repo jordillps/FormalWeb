@@ -60,9 +60,7 @@ class PostController extends Controller
 
         $post = Post::create($request->all());
 
-        //Post Url
-        $post->url = Str::slug($post->title);
-        $post->save();
+        $this->syncPostUrl($post, $request->input('title:' . app()->getLocale()));
 
         foreach ($request->input('images', []) as $file) {
             $post->addMedia(storage_path('tmp/uploads/' . $file))->toMediaCollection('images', 'posts-media');
@@ -118,8 +116,7 @@ class PostController extends Controller
             $post->save();
         }
 
-        $post->url = Str::slug($post->title);
-        $post->save();
+        $this->syncPostUrl($post, $request->input('title:' . app()->getLocale()));
 
         $tags = collect($request->get('tags'))->map(function($tag){
             return Tag::find($tag) ? $tag : '';
@@ -204,5 +201,42 @@ class PostController extends Controller
         flash()->overlay(trans('global.deleted-succesfully'), trans('global.delete-image'));
 
         return redirect()->route('posts.index');
+    }
+
+    private function syncPostUrl(Post $post, ?string $preferredTitle = null): void
+    {
+        $title = $preferredTitle;
+
+        if (blank($title)) {
+            $title = $post->title;
+        }
+
+        if (blank($title) && method_exists($post, 'translate')) {
+            $translation = $post->translate(app()->getLocale(), false);
+            $title = $translation?->title;
+        }
+
+        if (blank($title)) {
+            $title = $post->translations()->whereNotNull('title')->value('title');
+        }
+
+        $baseSlug = Str::slug((string) $title);
+        if (blank($baseSlug)) {
+            $baseSlug = 'post-' . $post->id;
+        }
+
+        $slug = $baseSlug;
+        $counter = 2;
+        while (
+            Post::where('id', '!=', $post->id)
+                ->where('url', $slug)
+                ->exists()
+        ) {
+            $slug = $baseSlug . '-' . $counter;
+            $counter++;
+        }
+
+        $post->url = $slug;
+        $post->save();
     }
 }

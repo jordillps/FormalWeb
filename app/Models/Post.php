@@ -10,7 +10,6 @@ use Spatie\MediaLibrary\InteractsWithMedia;
 use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
 use Astrotomic\Translatable\Translatable;
 use Carbon\Carbon;
-use Laravelista\Comments\Commentable;
 
 /**
  * Class Post
@@ -35,11 +34,12 @@ use Laravelista\Comments\Commentable;
  */
 class Post extends Model implements HasMedia, TranslatableContract
 {
-    use HasFactory, Translatable, InteractsWithMedia, Commentable;
-    // use HasFactory, Translatable, InteractsWithMedia;
+    use HasFactory, Translatable, InteractsWithMedia;
     
 
-    protected $dates = ['published_at'];
+    protected $casts = [
+        'published_at' => 'datetime',
+    ];
 
     public $translatedAttributes = ['title','excerpt', 'iframe','body'];
 

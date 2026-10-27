@@ -66,10 +66,14 @@
                         <div class="publisher-area">
                             <ul>
                                 <li><i class='bx bx-user'></i>{{ __('web.by-author') }}</li>
-                                @if(app()->getLocale() == 'en')
-                                    <li><i class='bx bx-calendar'></i>{{ $post->published_at->translatedFormat('Y M d') }}</li>
+                                @if($post->published_at)
+                                    @if(app()->getLocale() == 'en')
+                                        <li><i class='bx bx-calendar'></i>{{ $post->published_at->translatedFormat('Y M d') }}</li>
+                                    @else
+                                        <li><i class='bx bx-calendar'></i>{{ $post->published_at->translatedFormat('d M Y') }}</li>
+                                    @endif
                                 @else
-                                    <li><i class='bx bx-calendar'></i>{{ $post->published_at->translatedFormat('d M Y') }}</li>
+                                    <li><i class='bx bx-calendar'></i>-</li>
                                 @endif
                                 {{-- <li><i class="bi bi-chat-dots"></i>Comments (02)</li> --}}
                             </ul>
@@ -122,7 +126,6 @@
                         </div>
                     </div>
                 </div>
-                @comments(['model' => $post, 'maxIndentationLevel' => 1])
             </div>
             <div class="col-lg-4 order-lg-2 order-1">
                 <div class="blog-sidebar">
@@ -146,10 +149,14 @@
                                                 <div class="post-content">
                                                     <h6><a href="{{ route('blog.show', $post) }}">{{ $post->{'title:'. app()->getLocale()} }}</a>
                                                     </h6>
-                                                    @if(app()->getLocale() == 'en')
-                                                        <span><i class='bx bx-calendar'></i>{{ $post->published_at->translatedFormat('Y M d') }}</span>
+                                                    @if($post->published_at)
+                                                        @if(app()->getLocale() == 'en')
+                                                            <span><i class='bx bx-calendar'></i>{{ $post->published_at->translatedFormat('Y M d') }}</span>
+                                                        @else
+                                                            <span><i class='bx bx-calendar'></i>{{ $post->published_at->translatedFormat('d M Y') }}</span>
+                                                        @endif
                                                     @else
-                                                        <span><i class='bx bx-calendar'></i>{{ $post->published_at->translatedFormat('d M Y') }}</span>
+                                                        <span><i class='bx bx-calendar'></i>-</span>
                                                     @endif
                                                 </div>
                                             </li>

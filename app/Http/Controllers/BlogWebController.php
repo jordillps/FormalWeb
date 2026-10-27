@@ -32,10 +32,8 @@ class BlogWebController extends Controller
 
         // dd($request->all());
         
-        $posts = Post::where('isPublished', true)
-        // ->leftJoin('post_translations', 'post_translations.post_id', 'posts.id')
-        // ->where('post_translations.locale', app()->getLocale())
-        ->orderBy('published_at', 'desc')->paginate(12);
+        $postsQuery = Post::where('isPublished', true)
+            ->orderBy('published_at', 'desc');
 
         // $posts = $posts->map(function ($post) {
         //     return collect($post->toArray())
@@ -45,8 +43,10 @@ class BlogWebController extends Controller
         // return  $posts;
 
         if ($request->has('category') && $request->category != '') {
-            $posts = Post::where('category_id', $request->category)->paginate(12);
+            $postsQuery->where('category_id', $request->category);
         }
+
+        $posts = $postsQuery->paginate(12);
     
         $categories = Category::all();
 

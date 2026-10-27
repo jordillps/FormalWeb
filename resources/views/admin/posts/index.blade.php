@@ -71,12 +71,16 @@
 											<td>{{ $post->category->{'name:'. app()->getLocale()} }}</td>
 
                                             <td>
-                                                    <a class="btn btn-sm btn-primary " href="{{ route('posts.show',$post) }}"><i class="fa fa-fw fa-eye"></i>{{ __("global.show") }}</a>
-                                                    <a class="btn btn-sm btn-success" href="{{ route('posts.edit',$post) }}"><i class="fa fa-fw fa-edit"></i>{{ __("global.edit") }}</a>
-                                                    <button type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-item-id="{{ $post->url }}" data-item-name="{{ $post->title }}" data-target="#modal-delete"><i class="fa fa-fw fa-trash"></i>
-                                                        {{ __('global.delete') }}
-                                                      </button>
-                                            </td>
+											        @if(filled($post->url))
+											        <a class="btn btn-sm btn-primary " href="{{ route('posts.show',$post) }}"><i class="fa fa-fw fa-eye"></i>{{ __("global.show") }}</a>
+											        <a class="btn btn-sm btn-success" href="{{ route('posts.edit',$post) }}"><i class="fa fa-fw fa-edit"></i>{{ __("global.edit") }}</a>
+											        <button type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-item-id="{{ $post->url }}" data-item-name="{{ $post->title }}" data-target="#modal-delete"><i class="fa fa-fw fa-trash"></i>
+											            {{ __('global.delete') }}
+											          </button>
+											        @else
+											            <span class="text-muted">-</span>
+											        @endif
+											</td>
                                         </tr>
                                     @endforeach
                                 </tbody>
